@@ -1,0 +1,42 @@
+﻿Model Metrics for E-commerce Purchase Prediction
+
+
+Model: XGBoost Classifier, Logistic Regression
+Dataset: Cleaned Data (10% sample)
+Number of Features: 18
+Number of Samples (Train/Test Split): 6740147  (70% Train, 30% Test)
+Training Time: 32 minutes
+
+
+      Classification Report:
+                    precision    recall  f1-score   support
+
+
+                 0       0.99      1.00      0.99   1992076
+                 1       0.00      0.00      0.00     29969
+
+
+    accuracy                                 0.99   2022045
+   macro avg      0.49      0.50      0.50   2022045
+weighted avg     0.97      0.99      0.98   2022045
+
+
+Confusion Matrix:
+ [[1992076       0]
+ [  29969       0]]
+
+
+Best Parameters for XGBoost Classifier:
+- Learning Rate: 0.0143
+- Max Depth: 4
+- Number of Estimators: 256
+- Subsample: 0.8838
+- Colsample bytree: 0.9943
+- Gamma: 1.5822
+- Lambda: 3.7979
+
+
+Best Parameters for Logistic Regression:
+- Regularization Strength (C): 0.1
+- Solver: saga
+- Class Weight: None
